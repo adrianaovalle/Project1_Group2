@@ -50,9 +50,41 @@ This code computes and summarizes the investment ranking by Neighborhoods in sel
 * Flood Risk:	Risk of flooding
 * Valuation: Increase/ Decrease on home valuation year over year (2018-2019) 
 
-A correlation matrix was built for the above paramters and the appraised value 2019.
+A correlation matrix was built for the above parameters and the appraised value 2019. Appaised value correlated fairly well with home area and land area as expected.
+The other parameters have no correlation against the others, meaning that they are no linear relationships between those variables.
 
 ![Figure2](Images/correlation_matrix.png)
+
+To rank the neighborhoods,the following is the procedure used on homes valued less than $1MM
+1- Sales, Crime Rate, School Rating, Acreage, SQ_FT, Flood Risk, where normalized first using the equation: Xn=(X-Xmin)/(Xmax-Xmin).
+Where,  Xn= Normalized parameter
+        X= Value of the parameter
+        Xmin= minimum value of the parameter
+        Xmax= maximum value of the parameter
+2- Valuation can take negative numbers, so Vn=V/Vmax
+Where,  Vn=normalized valuation
+        V= valuation
+        Vmax = maximum valuation
+3-  Weights for each parameter can be defined based on user needs: How important each parameter is for the investor. Investor should rank parameters from 1 to 10, 
+    1 meaning not important, 10 meaning very important
+    For this example, we used:
+    * Sales: 8
+    * Crime Rate: 5
+    * School Rating:	7
+    * Acreage: 	6
+    * SQ_FT: 	6
+    * Flood Risk:	8
+    * Valuation: 10
+4- A score is defined based on the weights and the normalized parameters:
+    Score: Wsales*Sales_norm + Wschools*School_norm + WAcreage*Acreage_norm + WSQ-FT * SQFT_norm +Wvaluation*Valuation_norm-WCrime*Crime_norm-WFlood*Flood_norm.
+    Score is then normalized to have a range 0-100.
+5-  Results are grouped by neighborhood, and neighborhoods that have negative valuation or no sales are removed.
+6-  Valuation is normalized so score falls into 0-100 range.
+7-  Results of top neighborhoods to invest given parameter importance and budget are presented, along with the map of where the neighborhoods are.
+
+### Results
+
+    
 
 
 
