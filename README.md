@@ -37,7 +37,8 @@ Code:
 Code:
 
 ## Investment Dashboard
-Code: Results.ipynb
+Code: Results.ipynb.
+
 This code computes and summarizes the investment ranking by Neighborhoods in selected ZIP codes.
 
 ### Methodology
