@@ -85,9 +85,18 @@ Where,  Vn=normalized valuation
 
 ### Results
 #### Investor Scorecard for all area of study
+![Figure3](Images/results_all_area.png)
+
 #### Investor Scorecard for budget $0-250k
+![Figure4](Images/results_250k.png)
+
 #### Investor Scorecard for budget $250-500k   
+![Figure5](Images/results_500k.png)
+
 #### Investor Scorecard for budget $500-750k  
+![Figure6](Images/results_750k.png)
+
 #### Investor Scorecard for budget $750k-1M  
+![Figure6](Images/results_1M.png)
 
 
