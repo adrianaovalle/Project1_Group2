@@ -16,9 +16,18 @@ What are the best neighborhoods to invest in Single Family Homes in Houston?
 The focus of the study are Single Family Homes in 9 ZIP codes in the Houston area that are located in the inner loop between I-10, 610, and 288 highways.
 The 9 ZIP Codes of study are: 77002,77005,77006, 77019,77025, 77030, 77054, 77027, 77098.
 
+![Figure1](Images/Area_of_Study.png)
 
 
-## Data Sources and File Management
+
+## Data Sources & File Management
+The following are the data sources used:
+* HCAD System: https://pdata.hcad.org/download/2019
+* School Ratings: https://rptsvr1.tea.texas.gov/perfreport/account/index.html
+* National Flood Data: http://nationalflooddata.com/flood/floodapi/
+* Places:https://cloud.google.com/maps-platform/
+* Crime: https://www.houstontx.gov/police/cs/Monthly_Crime_Data_by_Street_and_Police_Beat.htm
+
 
 ## Data Cleanup & Exploration
 
