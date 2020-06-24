@@ -76,16 +76,17 @@ Where,  Vn=normalized valuation
     * Flood Risk:	8
     * Valuation: 10
 * 4- A score is defined based on the weights and the normalized parameters:
-    Score: Wsales*Sales_norm + Wschools*School_norm + WAcreage*Acreage_norm + WSQ-FT * SQFT_norm +Wvaluation*Valuation_norm-WCrime*Crime_norm-WFlood*Flood_norm.
+    Score: Wsales*Sales_norm + Wschools*School_norm + WAcreage*Acreage_norm + WSQ-FT * SQFT_norm + Wvaluation*Valuation_norm-W + Crime*Crime_norm - WFlood*Flood_norm
     Score is then normalized to have a range 0-100.
 * 5-  Results are grouped by neighborhood, and neighborhoods that have negative valuation or no sales are removed.
 * 6-  Valuation is normalized so score falls into 0-100 range.
 * 7-  Results of top neighborhoods to invest given parameter importance and budget are presented, along with the map of where the neighborhoods are.
 
 ### Results
-
-    
-
-
+#### Investor Scorecard for all area of study
+#### Investor Scorecard for budget $0-250k
+#### Investor Scorecard for budget $250-500k   
+#### Investor Scorecard for budget $500-750k  
+#### Investor Scorecard for budget $750k-1M  
 
 
