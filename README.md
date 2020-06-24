@@ -51,7 +51,7 @@ This code computes and summarizes the investment ranking by Neighborhoods in sel
 * Flood Risk:	Risk of flooding
 * Valuation: Increase/ Decrease on home valuation year over year (2018-2019) 
 
-A correlation matrix was built for the above parameters and the appraised value 2019. Appaised value correlated fairly well with home area and land area as expected.
+A correlation matrix was built for the above parameters and the appraised value 2019 of Single Family homes. Appaised value correlated fairly well with home area and land area as expected.
 The other parameters have no correlation against the others, meaning that they are no linear relationships between those variables.
 
 ![Figure2](Images/correlation_matrix.png)
