@@ -28,13 +28,16 @@ The following are the data sources used:
 * Places:https://cloud.google.com/maps-platform/
 * Crime: https://www.houstontx.gov/police/cs/Monthly_Crime_Data_by_Street_and_Police_Beat.htm
 
-All related files to this project are located at: XXXX
+All related files to this project are located at: https://drive.google.com/drive/folders/1vn9j-N2DYTr-BGjgSgRSi1-WDZ3dmUnE
 
 ## Data Gathering & Cleanup
 Code:
 
 ## Data Analysis
 Code:
+
+Code: BoxPlots.ipynb
+This code produces all the boxplots for the parameters of study
 
 ## Investment Dashboard
 Code: Results.ipynb
