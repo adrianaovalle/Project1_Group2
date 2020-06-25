@@ -69,7 +69,7 @@ Where,  Xn= Normalized parameter
 Where,  Vn=normalized valuation
         V= valuation
         Vmax = maximum valuation
-* 3-  Weights for each parameter can be defined based on user needs: How important each parameter is for the investor. Investor should rank parameters from 1 to 10, 
+* 3-  Weights for each parameter can be left at 1 as base case (all parameters equal) or can be defined based on user needs: How important each parameter is for the investor. Investor should rank parameters from 1 to 10, 
     1 meaning not important, 10 meaning very important
     For this example, we used:
     * Sales: 8
