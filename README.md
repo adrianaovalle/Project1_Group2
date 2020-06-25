@@ -23,7 +23,7 @@ The 9 ZIP Codes of study are: 77002,77005,77006, 77019,77025, 77030, 77054, 7702
 ## Data Sources & File Management
 The following are the data sources used:
 * HCAD System: https://pdata.hcad.org/download/2019
-* School Ratings: https://rptsvr1.tea.texas.gov/perfreport/account/index.html
+* School Ratings: https://texasschoolguide.org/school-rankings/
 * National Flood Data: http://nationalflooddata.com/flood/floodapi/
 * Places:https://cloud.google.com/maps-platform/
 * Crime: https://www.houstontx.gov/police/cs/Monthly_Crime_Data_by_Street_and_Police_Beat.htm
