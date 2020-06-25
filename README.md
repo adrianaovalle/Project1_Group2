@@ -96,7 +96,7 @@ Code: BoxPlots.ipynb, Input Files: Resources/all_data_merged.csv
 This code produces all the boxplots for the parameters of study
 
 ## Investment Dashboard
-Code: Results.ipynb, Input Files: Resources/all_data_merged.csv
+Code: Results.ipynb, Input Files: Resources/all_data_merged.csv, Output Files: Output/homes_less_than_1M.csv
 
 This code computes and summarizes the investment ranking by Neighborhoods in selected ZIP codes.
 
