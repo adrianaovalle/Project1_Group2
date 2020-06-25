@@ -49,12 +49,14 @@ Code: school_zone_classification.ipynb
 This code shows the sklearn KNearest Neighboor test used to do a pseudo school zoning per residence in the dataset
 
 Code: BoxPlots.ipynb
-nput Files: Resources/all_data_merged.csv
+
+Input Files: Resources/all_data_merged.csv
 
 This code produces all the boxplots for the parameters of study
 
 ## Investment Dashboard
 Code: Results.ipynb
+
 Input Files: Resources/all_data_merged.csv
 
 This code computes and summarizes the investment ranking by Neighborhoods in selected ZIP codes.
