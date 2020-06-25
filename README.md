@@ -34,7 +34,7 @@ All related files to this project are located at: https://drive.google.com/drive
 Code:
 
 ## Data Analysis
-Code:
+Code: school_data_exploration.ipynb, chisquare.ipynb, school_zone_classification.ipynb
 
 Code: BoxPlots.ipynb
 This code produces all the boxplots for the parameters of study
