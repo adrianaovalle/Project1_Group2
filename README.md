@@ -84,6 +84,9 @@ Where,  Vn=normalized valuation
 * 7-  Results of top neighborhoods to invest given parameter importance and budget are presented, along with the map of where the neighborhoods are.
 
 ### Results
+The graphs below are the results of the study area with given weights for the paameters by an Investor. Different weights will rank neighborhoods differently.
+The grapsh below are an example o the results produced based on the weights of the parameters presented above.
+
 #### Investor Scorecard for all area of study
 ![Figure3](Images/results_all_area.png)
 
