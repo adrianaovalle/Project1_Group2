@@ -31,29 +31,29 @@ The following are the data sources used:
 All related files to this project are located at: https://drive.google.com/drive/folders/1vn9j-N2DYTr-BGjgSgRSi1-WDZ3dmUnE
 
 ## Data Gathering & Cleanup
-Code: school_ratings.ipynb
-
+Code: school_ratings.ipynb, Input Files:Resources/tsg_final_11.17_From_Children_at_Risk.csv. Output file: Output/Schools_Ratings_Harris_Co.csv
+        
 This code contains the steps used to clean up the school ratings dataset
 
 ## Data Analysis
-Code: school_data_exploration.ipynb
+Code: school_data_exploration.ipynb, Input Files:Resources/combined_flood_crime_and_school_data.csv, Resources/Schools_Ratings_Harris_Co.csv. Output file: Output/combined_data_without_charter_schools.csv
 
 This code shows the plots and correlations done on key parameters
 
-Code: crime_chisquare.ipynb
+Code: crime_chisquare.ipynb, Input Files:Resources/combined_flood_crime_and_school_data.csv
 
 This code shows the chi_square analysis of crime by zip code.
 
-Code: school_zone_classification.ipynb
-
+Code: school_zone_classification.ipynb, Input Files:Resources/Schools_Ratings_Harris_Co.csv, Resources/flood_crime_hcad.csv. Output file: Output/combined_flood_crime_and_school_data.csv
+        
 This code shows the sklearn KNearest Neighboor test used to do a pseudo school zoning per residence in the dataset
 
-Code: BoxPlots.ipynb
+Code: BoxPlots.ipynb, Input Files: Resources/all_data_merged.csv
 
 This code produces all the boxplots for the parameters of study
 
 ## Investment Dashboard
-Code: Results.ipynb
+Code: Results.ipynb, Input Files: Resources/all_data_merged.csv
 
 This code computes and summarizes the investment ranking by Neighborhoods in selected ZIP codes.
 
