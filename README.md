@@ -31,10 +31,18 @@ The following are the data sources used:
 All related files to this project are located at: https://drive.google.com/drive/folders/1vn9j-N2DYTr-BGjgSgRSi1-WDZ3dmUnE
 
 ## Data Gathering & Cleanup
-Code:
+Code: school_ratings
+This code contains the steps used to clean up the school ratings dataset
 
 ## Data Analysis
-Code: school_data_exploration.ipynb, chisquare.ipynb, school_zone_classification.ipynb
+Code: school_data_exploration.ipynb
+This code shows the plots and correlations done on key parameters
+
+Code: crime_chisquare.ipynb
+This code shows the chi_square analysis of crime by zip code.
+
+Code: school_zone_classification.ipynb
+This code shows the sklearn KNearest Neighboor test used to do a pseudo school zoning per residence in the dataset
 
 Code: BoxPlots.ipynb
 This code produces all the boxplots for the parameters of study
