@@ -31,9 +31,52 @@ The following are the data sources used:
 All related files to this project are located at: https://drive.google.com/drive/folders/1vn9j-N2DYTr-BGjgSgRSi1-WDZ3dmUnE
 
 ## Data Gathering & Cleanup
-Code: school_ratings.ipynb, Input Files:Resources/tsg_final_11.17_From_Children_at_Risk.csv. Output file: Output/Schools_Ratings_Harris_Co.csv
-        
-This code contains the steps used to clean up the school ratings dataset
+
+Code:HCAD_Data_Processing.ipynb
+    This notebook pulls in data from several Harris County Appraisal District files, appends them and filters them down to the necessary parameters, zip codes and to only single family residential addresses.
+    The input files required to run HCAD Data Processing notebook are in the google drive specified above, the files are:
+        'Resources/2018 files.zip'
+        'Resources/2019 files.zip'
+        'Resources/building_res.zip'
+        'Resources/real_neighborhood_code.txt'
+    The output file from this notebook is: 
+        'Output/Inner_Loop_18_19.csv'
+    This file is then used as an input to the Get_Flood_API notebook
+            
+Code:Get_Flood_API.ipynb:
+    This notebook pulls flood information from the national flood api on every address in our HCAD dataset (when available).
+    The input file required to run the Get_Flood_API is:
+        'Resources/Inner_Loop_18_19.csv'
+            To run this file you will either have to borrow Adriana's API key or get your own and create a file called 'api_keys' with the line of code: flood_data_api_key = 'YOUR API KEY HERE'
+    The file will create an output file for each zip code:
+        'Output/flood_data_{zipcodes}.csv'           
+
+Code:flood_api_pull_missing_addresses.ipynb
+    We initially had an error that missed some addresses,determined which they were and then had to pull them to a new batch of Flood API pulls.
+    The file required to run this notebook is:
+        'Resources/missing_addresses.csv'
+    For this file you will need an API key and file called 'api_keys' with the line of code: lood_data_api_key = 'YOUR API KEY HERE'
+    This will create many output files:
+        'Output/flood_data_batch{x}.csv'
+    
+Code:Combine_Flood_Crime_HCAD.ipynb
+    This file pulls the houston crime data, aggregates is by zip code, indexes it and appends it to the flood and HCAD data.
+    The input file required to run the Get_Flood_API are:
+        'Resources/flood_data_{z}.csv'
+        'Resources/flood_data_batch{x}.csv'
+        'Resources/Inner_Loop_18_19.csv'
+     Note:  This notebook has a commented out section that shows the code that was used to determine the addresses that we were initially missing before running the missing addresses notebook listed above.
+     The output of this notebook was:
+         'Output/flood_crime_hcad.csv'
+
+Code: school_ratings.ipynb
+    This notebook pulls school ratings and types of schools and geolocates each school on its address to get its latitude and longitude.
+    This code also contains the steps used to clean up the school ratings dataset
+    The inputs required for this notebook include:
+        'Resources/tsg_final_11.17_From_Children_at_Risk.csv'
+    You will need a google maps api key to run this notebook.  You should store it in a file called 'config' and include the line of code gkey = "YOUR API KEY HERE".
+    The output created by this notebook is:
+        'Output/Schools_Ratings_Harris_Co.csv'
 
 ## Data Analysis
 Code: school_data_exploration.ipynb, Input Files:Resources/combined_flood_crime_and_school_data.csv, Resources/Schools_Ratings_Harris_Co.csv. Output file: Output/combined_data_without_charter_schools.csv
