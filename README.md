@@ -78,7 +78,7 @@ Code: school_ratings.ipynb
     The output created by this notebook is:
         'Output/Schools_Ratings_Harris_Co.csv'
         
-Code: merge_owner_data.ipyng
+Code: merging_owner_data.ipyng
     This notebook merges owner data and sales year into the main dataframe
     Input Files: Resources/new_owner.csv, Resources/combined_data_without_charter_schools.csv. Output Files: Output/all_data_merged.csv
 
