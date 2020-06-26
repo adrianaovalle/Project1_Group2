@@ -28,7 +28,8 @@ The following are the data sources used:
 * Places:https://cloud.google.com/maps-platform/
 * Crime: https://www.houstontx.gov/police/cs/Monthly_Crime_Data_by_Street_and_Police_Beat.htm
 
-All related files to this project are located at: https://drive.google.com/drive/folders/1vn9j-N2DYTr-BGjgSgRSi1-WDZ3dmUnE
+All related files to this project are located at: https://drive.google.com/drive/folders/1vn9j-N2DYTr-BGjgSgRSi1-WDZ3dmUnE.
+Input files could not be pushed to GitHub because their individual sizes exceed 100MB.
 
 ## Data Gathering & Cleanup
 
