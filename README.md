@@ -77,6 +77,10 @@ Code: school_ratings.ipynb
     You will need a google maps api key to run this notebook.  You should store it in a file called 'config' and include the line of code gkey = "YOUR API KEY HERE".
     The output created by this notebook is:
         'Output/Schools_Ratings_Harris_Co.csv'
+        
+Code: merge_owner_data.ipyng
+    This notebook merges owner data and sales year into the main dataframe
+    Input Files: Resources/new_owner.csv, Resources/combined_data_without_charter_schools.csv. Output Files: Output/all_data_merged.csv
 
 ## Data Analysis
 Code: school_data_exploration.ipynb, Input Files:Resources/combined_flood_crime_and_school_data.csv, Resources/Schools_Ratings_Harris_Co.csv. Output file: Output/combined_data_without_charter_schools.csv
